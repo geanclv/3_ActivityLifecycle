@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">3_ActivityLifecycle</string>
+    <string name="app_name">Activity Lifecycle App</string>
+    <string name="app_welcome">Welcome again!</string>
+    <string name="app_comercial_name">Party Marty!</string>
+    <string name="app_tittle">All you are looking for</string>
+    <string name="app_subtitle">Parties and marties in the city</string>
+    <string name="app_start">Get start</string>
 </resources>
