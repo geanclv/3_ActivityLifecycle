@@ -13,4 +13,12 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <!-- Customize color buttons. -->
+    <style name="Button.White" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@android:color/white</item>
+    </style>
+    <style name="Button.Light" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@android:color/background_light</item>
+    </style>
 </resources>
