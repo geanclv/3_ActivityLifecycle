@@ -89,6 +89,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/button_transparent"
+        android:onClick="btnNextClicked"
         android:text="@string/app_continue"
         app:layout_constraintBottom_toBottomOf="@+id/imgBackground"
         app:layout_constraintEnd_toEndOf="parent"
