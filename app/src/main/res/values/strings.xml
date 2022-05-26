@@ -10,8 +10,12 @@
     <string name="app_cinema">Want to see a movie?</string>
     <string name="app_party">Party is my life!</string>
 
-    <string name="app_opc_a">Soy lo mejor</string>
-    <string name="app_opc_b">Soy excelente</string>
+    <string name="app_opc_a">I am best</string>
+    <string name="app_opc_b">I am excelent</string>
+
+    <string name="app_election">Your election is:</string>
+    <string name="app_bye">... we are processing your request</string>
 
     <string name="app_continue">Continue</string>
+    <string name="app_restart">Restart</string>
 </resources>
