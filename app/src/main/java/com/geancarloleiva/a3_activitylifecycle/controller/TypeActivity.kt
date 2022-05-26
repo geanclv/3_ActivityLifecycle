@@ -1,15 +1,19 @@
-package com.geancarloleiva.a3_activitylifecycle
+package com.geancarloleiva.a3_activitylifecycle.controller
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
+import com.geancarloleiva.a3_activitylifecycle.R
+import com.geancarloleiva.a3_activitylifecycle.model.PartyMarty
+import com.geancarloleiva.a3_activitylifecycle.utils.EXTRA_PARTYMARTY
 
 class TypeActivity : BasicActivity() {
 
-    var selectedOption = "";
+    //refactorizando la variable con una clase Parcelable: partyMarty
+    //var selectedOption = "";
+    var partyMarty = PartyMarty("", "")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,9 +37,9 @@ class TypeActivity : BasicActivity() {
 
     //forma 2 de accionar un botón clicado
     fun btnNextClicked(view: View){
-        if(selectedOption != ""){
+        if(partyMarty.type != ""){
             val detailIntent = Intent(this, DetailActivity::class.java)
-            detailIntent.putExtra(EXTRA_TYPE, selectedOption)
+            detailIntent.putExtra(EXTRA_PARTYMARTY, partyMarty)
             startActivity(detailIntent)
         } else {
             Toast.makeText(this, "Debe seleccionar una opción", Toast.LENGTH_SHORT).show()
@@ -43,7 +47,7 @@ class TypeActivity : BasicActivity() {
     }
 
     fun onSelectedType(type: String){
-        selectedOption = type;
-        Toast.makeText(this, selectedOption, Toast.LENGTH_SHORT).show()
+        partyMarty.type = type;
+        Toast.makeText(this, partyMarty.type, Toast.LENGTH_SHORT).show()
     }
 }

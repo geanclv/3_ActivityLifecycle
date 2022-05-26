@@ -1,9 +1,9 @@
-package com.geancarloleiva.a3_activitylifecycle
+package com.geancarloleiva.a3_activitylifecycle.controller
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.geancarloleiva.a3_activitylifecycle.R
 
 class MainActivity : BasicActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

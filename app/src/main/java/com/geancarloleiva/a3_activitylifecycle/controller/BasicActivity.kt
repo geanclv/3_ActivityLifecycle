@@ -1,4 +1,4 @@
-package com.geancarloleiva.a3_activitylifecycle
+package com.geancarloleiva.a3_activitylifecycle.controller
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
