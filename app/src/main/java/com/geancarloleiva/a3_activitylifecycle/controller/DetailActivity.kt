@@ -16,6 +16,20 @@ class DetailActivity : AppCompatActivity() {
     /*var type = ""
     var detail = ""*/
 
+    //Inicio Evitando perder datos al girar la pantalla
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putParcelable(EXTRA_PARTYMARTY, partyMarty)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        if (savedInstanceState != null){
+            partyMarty = savedInstanceState.getParcelable<PartyMarty>(EXTRA_PARTYMARTY)!!
+        }
+    }
+    //Fin Evitando perder datos al girar la pantalla
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
